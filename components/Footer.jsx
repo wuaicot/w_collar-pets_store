@@ -9,30 +9,30 @@ import {
 const Footer = () => {
   return (
     <div className="footer-container">
-      <p>2022 Namkeen Kings All rights reserverd</p>
+      <p>2025 WUAICOT. All rights reserverd</p>
       <p className="icons">
         <AiFillLinkedin
           className="cursor-pointer"
           onClick={() => {
-            window.open("https://www.linkedin.com/in/thevikramchoudhary/");
+            window.open("https://www.linkedin.com/in/wuaicot/");
           }}
         />
         <AiFillInstagram
           className="cursor-pointer"
           onClick={() => {
-            window.open("https://www.instagram.com/ninja_webtech/");
+            window.open("https://www.instagram.com/naycol.linares/");
           }}
         />
         <AiOutlineTwitter
           className="cursor-pointer"
           onClick={() => {
-            window.open("https://www.twitter.com/ninja_webtech/");
+            window.open("https://www.twitter.com/naiycol/");
           }}
         />
         <AiFillGithub
           className="cursor-pointer"
           onClick={() => {
-            window.open("https://github.com/WebDevVikramChoudhary");
+            window.open("https://github.com/wuaicot");
           }}
         />
       </p>
