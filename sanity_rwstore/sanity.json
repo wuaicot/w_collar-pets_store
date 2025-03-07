@@ -1,10 +1,10 @@
 {
   "root": true,
   "project": {
-    "name": "sanity_rw_store"
+    "name": "qr-collar"
   },
   "api": {
-    "projectId": "7flum2t9",
+    "projectId": "nvlisx04",
     "dataset": "production"
   },
   "plugins": [

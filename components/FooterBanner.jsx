@@ -1,22 +1,13 @@
 import React from "react";
-// import Link from "next/link";
-
 import { urlFor } from "../lib/client";
 
-const FooterBanner = ({
-  footerBanner: {
-    discount,
-    largeText1,
-    largeText2,
-    saleTime,
-    smallText,
-    midText,
-    desc,
-    // product,
-    // buttonText,
-    image
+const FooterBanner = ({ footerBanner }) => {
+  if (!footerBanner || Object.keys(footerBanner).length === 0) {
+    return <div>Cargando datos...</div>; // Manejo de error si no hay datos
   }
-}) => {
+
+  const { discount, largeText1, largeText2, saleTime, smallText, midText, desc, image } = footerBanner;
+
   return (
     <div className="footer-banner-container">
       <div className="banner-desc">
@@ -32,7 +23,7 @@ const FooterBanner = ({
           <p>{desc}</p>
         </div>
 
-        <img src={urlFor(image)} className="footer-banner-image" />
+        {image && <img src={urlFor(image)} className="footer-banner-image" />} {/* Evita error si `image` es undefined */}
       </div>
     </div>
   );

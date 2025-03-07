@@ -1,25 +1,28 @@
 import React from "react";
-
 import { client } from "../lib/client";
 import { Product, FooterBanner, HeroBanner } from "../components";
 
-const Home = ({ products, bannerData }) => (
-  <div>
-    <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
-    <div className="products-heading">
-      <h2>Mira Estos Collares</h2>
-      <p>We provide best potato chips all over the India</p>
-    </div>
+const Home = ({ products, bannerData }) => {
+  console.log("🚀 ~ bannerData:", bannerData); // Debug para revisar los datos
 
-    <div className="products-container">
-      {products?.map((product) => (
-        <Product key={product._id} product={product} />
-      ))}
-    </div>
+  return (
+    <div>
+      <HeroBanner heroBanner={bannerData.length > 0 ? bannerData[0] : {}} />
+      <div className="products-heading">
+        <h2>Mira Estos Collares</h2>
+        <p>We provide best potato chips all over the India</p>
+      </div>
 
-    <FooterBanner footerBanner={bannerData && bannerData[0]} />
-  </div>
-);
+      <div className="products-container">
+        {products?.map((product) => (
+          <Product key={product._id} product={product} />
+        ))}
+      </div>
+
+      <FooterBanner footerBanner={bannerData.length > 0 ? bannerData[0] : {}} />
+    </div>
+  );
+};
 
 export const getServerSideProps = async () => {
   const query = '*[_type == "product"]';
@@ -28,8 +31,10 @@ export const getServerSideProps = async () => {
   const bannerQuery = '*[_type == "banner"]';
   const bannerData = await client.fetch(bannerQuery);
 
+  console.log("🚀 ~ Datos de Sanity:", { products, bannerData });
+
   return {
-    props: { products, bannerData }
+    props: { products, bannerData },
   };
 };
 
