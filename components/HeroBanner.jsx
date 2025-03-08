@@ -13,7 +13,7 @@ const HeroBanner = ({ heroBanner }) => {
         <img
           src={urlFor(heroBanner.image)}
           alt="Banner of chips and cookies"
-          className="hero-banner-image"
+          className="hero-banner-image bg-black"
         />
 
         <div>
@@ -21,7 +21,7 @@ const HeroBanner = ({ heroBanner }) => {
             <button type="button">{heroBanner.buttonText}</button>
           </Link> */}
           <div className="desc">
-            <h5>Description</h5>
+            <h5>Descripción</h5>
             <p>{heroBanner.desc}</p>
           </div>
         </div>

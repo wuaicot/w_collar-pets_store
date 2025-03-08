@@ -9,7 +9,7 @@ import {
 const Footer = () => {
   return (
     <div className="footer-container">
-      <p>2025 WUAICOT. All rights reserverd</p>
+      <p>2025 WUAICOT. Todos los derechos recervados</p>
       <p className="icons">
         <AiFillLinkedin
           className="cursor-pointer"
