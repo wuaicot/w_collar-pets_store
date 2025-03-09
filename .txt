@@ -1,9 +1,7 @@
 next-js-e-commerce-website.vercel.app/
 
 
-In .envlocal File
-     NEXT_PUBLIC_SANITY_PROJECT_ID=nvlisx04
-NEXT_PUBLIC_SANITY_DATASET=production
+
 
 Naycol Rodolfo Linares Villasmil
 RUT: 260914332
