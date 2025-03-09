@@ -1,5 +1,5 @@
 import React from "react";
-import { urlFor } from "../lib/client";
+//import { urlFor } from "../lib/client";
 
 const FooterBanner = ({ footerBanner }) => {
   if (!footerBanner || Object.keys(footerBanner).length === 0) {

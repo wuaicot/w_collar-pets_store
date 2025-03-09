@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 import { BsBagCheckFill } from "react-icons/bs";
 
@@ -22,17 +22,14 @@ const Success = () => {
         <p className="icon">
           <BsBagCheckFill />
         </p>
-        <h2>Thank you for your order!</h2>
-        <p className="email-msg">Check your email inbox for the receipt.</p>
+        <h2>¡Pago realizado con éxito!</h2>
+        <p className="email-msg">Revisa tu correo para la confirmación.</p>
         <p className="description">
-          If you have any questions, please email
-          <a className="email" href="mailto:wuaicot8@gmail.com">
-          wuaicot8@gmail.com
-          </a>
+          Si tienes dudas, por favor contáctanos.
         </p>
         <Link href="/">
-          <button type="button" width="300px" className="btn">
-            Seguir Comprando
+          <button type="button" className="btn">
+            Seguir comprando
           </button>
         </Link>
       </div>
