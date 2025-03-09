@@ -23,7 +23,7 @@ const FooterBanner = ({ footerBanner }) => {
           <p>{desc}</p>
         </div>
 
-        {image && <img src={urlFor(image)} className="footer-banner-image" />} {/* Evita error si `image` es undefined */}
+        {/* {image && <img src={urlFor(image)} className="footer-banner-image" />}  */}
       </div>
     </div>
   );

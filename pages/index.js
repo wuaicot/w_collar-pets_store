@@ -10,7 +10,7 @@ const Home = ({ products, bannerData }) => {
       <HeroBanner heroBanner={bannerData.length > 0 ? bannerData[0] : {}} />
       <div className="products-heading">
         <h2>Mira Estos Collares</h2>
-        <p>We provide best potato chips all over the India</p>
+        <p>Ofrecemos productos de calidad hechos con amor</p>
       </div>
 
       <div className="products-container">

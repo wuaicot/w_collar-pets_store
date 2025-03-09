@@ -55,11 +55,11 @@ const ProductDetails = ({ product, products }) => {
               <AiFillStar />
               <AiOutlineStar />
             </div>
-            <p>(20)</p>
+            <p>(4.3)</p>
           </div>
           <h4>Detalles: </h4>
           <p>{details}</p>
-          <p className="price">$ {price}</p>
+          <p className="price">CLP{price}</p>
           <div className="quantity">
             <h3>Cantidad:</h3>
             <p className="quantity-desc">
