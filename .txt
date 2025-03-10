@@ -9,3 +9,67 @@ Mercado Pago
 Cuenta Vista
 Número de cuenta: 1080951820
 linaresnaycol@gmail.com
+
+
+
+
+      W_COLLAR-PETS_STORE/
+│-- .next/
+│-- components/
+│   │-- Cart.jsx
+│   │-- Footer.jsx
+│   │-- FooterBanner.jsx
+│   │-- HeroBanner.jsx
+│   │-- index.js
+│   │-- Layout.jsx
+│   │-- Navbar.jsx
+│   │-- Product.jsx
+│-- context/
+│   │-- StateContext.js
+│-- lib/
+│   │-- client.js
+│   │-- getStripe.js
+│   │-- utils.js
+│-- node_modules/
+│-- pages/
+│   │-- api/
+│   │   │-- hello.js
+│   │   │-- stripe.js
+│   │-- product/
+│   │   │-- [slug].js
+│   │-- _app.js
+│   │-- index.js
+│   │-- success.js
+│-- public/
+│   │-- favicon.ico
+│   │-- vercel.svg
+│-- sanity_rwstore/
+│   │-- config/
+│   │   │-- @sanity/
+│   │   │   │-- data-aspects.json
+│   │   │   │-- default-layout.json
+│   │   │   │-- default-login.json
+│   │   │   │-- form-builder.json
+│   │   │   │-- vision.json
+│   │   │   │-- .checksums
+│   │-- plugins/
+│   │   │-- .gitkeep
+│   │-- schemas/
+│   │   │-- banner.js
+│   │   │-- product.js
+│   │   │-- schema.js
+│   │-- static/
+│   │   │-- .gitkeep
+│   │   │-- favicon.ico
+│-- styles/
+│-- .env
+│-- .eslintrc.json
+│-- .gitignore
+│-- .npmignore
+│-- next.config.js
+│-- package-lock.json
+│-- package.json
+│-- README.md
+│-- sanity.json
+│-- .txt
+│-- yarn.lock
