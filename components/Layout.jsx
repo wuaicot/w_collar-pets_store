@@ -1,8 +1,8 @@
 import React from "react";
 import Head from "next/head";
-
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const Layout = ({ children }) => {
   return (
@@ -17,6 +17,7 @@ const Layout = ({ children }) => {
       <footer>
         <Footer />
       </footer>
+      <SpeedInsights />
     </div>
   );
 };
