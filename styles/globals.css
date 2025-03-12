@@ -99,6 +99,12 @@ span.text-red {
   text-align: center;
   font-weight: 600;
 }
+
+.sub_hero{
+ background-color: #DCDCDC;
+ border-radius:0 0 16%  16% ;
+}
+
 .products-container {
   display: flex;
   flex-wrap: wrap;
@@ -106,7 +112,9 @@ span.text-red {
   gap: 15px;
   margin-top: 20px;
   width: 100%;
+  
 }
+
 .product-card {
   cursor: pointer;
   transform: scale(1, 1);
@@ -131,18 +139,18 @@ span.text-red {
   margin-top: 6px;
   color: black;
 }
-
+/*  */
 .hero-banner-container {
   padding: 100px 40px;
   background-color: #dcdcdc;
-  border-radius: 15px;
+  border-radius: 16% 16% 0 0px;
   position: relative;
   height: 500px;
   line-height: 0.9;
   width: 100%;
 }
 .hero-banner-container .beats-solo {
-  font-size: 20px;
+  font-size:20px;
 }
 .hero-banner-container button {
   border-radius: 15px;
@@ -201,10 +209,13 @@ span.text-red {
   text-align: center;
   margin: 40px 0px;
   color: #324d67;
+  
 }
 .products-heading h2 {
   font-size: 40px;
   font-weight: 800;
+  padding-bottom: 16px;
+  
 }
 .products-heading p {
   font-size: 16px;
