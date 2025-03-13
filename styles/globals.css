@@ -97,12 +97,13 @@ span.text-red {
   height: 18px;
   border-radius: 50%;
   text-align: center;
-  font-weight: 600;
-}
+color:white}
 
 .sub_hero{
  background-color: #DCDCDC;
  border-radius:0 0 16%  16% ;
+ color: #000;
+ 
 }
 
 .products-container {
@@ -169,10 +170,12 @@ span.text-red {
   font-size: 4rem;
   margin-top: 4px;
 }
+
+/* letras deader */
 .hero-banner-container h1 {
-  color: white;
-  font-size: 10em;
-  margin-left: -20px;
+  color: rgb(118, 27, 27);
+  font-size: 7em;
+  text-align: start;
   text-transform: uppercase;
 }
 .hero-banner-image {
@@ -207,7 +210,7 @@ span.text-red {
 }
 .products-heading {
   text-align: center;
-  margin: 40px 0px;
+  margin: 20px 0px;
   color: #324d67;
   
 }
@@ -223,7 +226,7 @@ span.text-red {
 }
 .footer-banner-container {
   padding: 100px 40px;
-  background-color: #f02d34;
+  background-color: #C20810;
   border-radius: 15px;
   position: relative;
   height: 400px;
@@ -767,3 +770,4 @@ span.text-red {
     margin: auto;
   }
 }
+
