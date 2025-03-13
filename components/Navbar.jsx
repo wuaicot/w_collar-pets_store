@@ -12,7 +12,9 @@ const Navbar = () => {
     <div className="navbar-container">
       <p className="logo ">
         <Link className="font-bold"  href="/">WUAICOT-STORE</Link>
-      </p>
+      </p> 
+ 
+        
 
       <button
         type="button"
@@ -22,10 +24,14 @@ const Navbar = () => {
         <AiOutlineShopping />
         <span className="cart-item-qty">{totalQuantities}</span>
       </button>
-
+      
       {showCart && <Cart />}
+      
     </div>
+    
   );
+  
 };
+
 
 export default Navbar;

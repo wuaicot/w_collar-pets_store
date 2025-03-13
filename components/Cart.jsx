@@ -32,16 +32,15 @@ const Cart = () => {
       },
       body: JSON.stringify(cartItems),
     });
-  
+
     if (response.status === 500) return;
-  
+
     const data = await response.json();
-  
+
     toast.loading("Redireccionando a Mercado Pago...");
-  
+
     window.location.href = `https://www.mercadopago.cl/checkout/v1/redirect?preference-id=${data.id}`;
   };
-  
 
   return (
     <div className="cart-wrapper" ref={cartRef}>
@@ -75,15 +74,22 @@ const Cart = () => {
         <div className="product-container">
           {cartItems.length >= 1 &&
             cartItems.map((item) => (
-              <div className="product" key={item._id}>
+              <div className="product" key={item?._id ?? Math.random()}>
                 <img
-                  src={urlFor(item?.image[0])}
+                  src={
+                    item?.image?.length > 0
+                      ? urlFor(item.image[0]).url()
+                      : "/fallback-image.jpg"
+                  }
+                  alt={item?.name || "Imagen no disponible"}
                   className="cart-product-image"
                 />
+
                 <div className="item-desc">
                   <div className="flex top">
-                    <h5>{item.name}</h5>
-                    <h4>CLP {item.price}</h4>
+                    <h5>{item?.name || "Producto sin nombre"}</h5>
+
+                    <h4>CLP {item?.price ?? "0"}</h4>
                   </div>
                   <div className="flex bottom">
                     <div>
@@ -96,7 +102,8 @@ const Cart = () => {
                         >
                           <AiOutlineMinus />
                         </span>
-                        <span className="num">{item.quantity}</span>
+                        <span className="num">{item?.quantity ?? 1}</span>
+
                         <span
                           className="plus"
                           onClick={() =>
