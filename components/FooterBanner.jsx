@@ -6,7 +6,16 @@ const FooterBanner = ({ footerBanner }) => {
     return <div>Cargando datos...</div>; // Manejo de error si no hay datos
   }
 
-  const { discount, largeText1, largeText2, saleTime, smallText, midText, desc, image } = footerBanner;
+  const {
+    discount,
+    largeText1,
+    largeText2,
+    saleTime,
+    smallText,
+    midText,
+    desc,
+    image,
+  } = footerBanner;
 
   return (
     <div className="footer-banner-container">

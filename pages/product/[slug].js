@@ -3,7 +3,7 @@ import {
   AiOutlineMinus,
   AiOutlinePlus,
   AiFillStar,
-  AiOutlineStar
+  AiOutlineStar,
 } from "react-icons/ai";
 
 import { client, urlFor } from "../../lib/client";
@@ -113,13 +113,13 @@ export const getStaticPaths = async () => {
 
   const paths = products.map((product) => ({
     params: {
-      slug: product.slug.current
-    }
+      slug: product.slug.current,
+    },
   }));
 
   return {
     paths,
-    fallback: "blocking"
+    fallback: "blocking",
   };
 };
 
@@ -133,7 +133,7 @@ export const getStaticProps = async ({ params: { slug } }) => {
   console.log(product);
 
   return {
-    props: { products, product }
+    props: { products, product },
   };
 };
 
