@@ -34,6 +34,6 @@ yarn-error.log*
 /sanity_rwstore/
 
 
-
+package-lock.json
 
 .env.local

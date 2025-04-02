@@ -8,12 +8,12 @@ const Home = ({ products, bannerData }) => {
   return (
     <div>
       <HeroBanner heroBanner={bannerData.length > 0 ? bannerData[0] : {}} />
-      <div className="products-heading ">
+      {/* <div className="products-heading ">
         <h2>Conoce nuestros Collares</h2>
-         <strong><p className="sub_hero">Ofrecemos productos de calidad hechos con amor</p></strong>
+         <strong><p className="sub_hero  ">Ofrecemos productos de calidad hechos con amor</p></strong>
         <br/>
         
-      </div>
+      </div> */}
      
 
       <div className="products-container">
