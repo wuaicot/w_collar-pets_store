@@ -153,23 +153,33 @@ color:white}
   color: black;  
 }
 /*  */
-.hero-banner-container {
-  padding: 100px 40px;
-  background-color: RGB(255, 0, 0)  ;
+..hero-banner-container {
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en columna */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  text-align: center; /* Asegura que el texto esté alineado */
+  padding: 80px 20px;
+  background-color: rgb(255, 0, 0);
   border-radius: 16% 16% 0 0px;
   position: relative;
-  height: 500px;
-  line-height: 0.9;
+  min-height: 500px;
   width: 100%;
-}
-.hero-banner-container .beats-solo {
   color: white;
-  font-size:20px;
 }
+
+/* Texto "beats-solo" */
+.hero-banner-container .beats-solo {
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Botón con efecto */
 .hero-banner-container button {
   border-radius: 15px;
-  padding: 10px 16px;
-  
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.2);
   color: white;
   border: none;
   margin-top: 40px;
@@ -177,20 +187,73 @@ color:white}
   font-weight: 500;
   cursor: pointer;
   z-index: 10000 !important;
-}
-/* letras SUPER-COLLAR */
-.hero-banner-container h3 {  
-  font-size: 4rem;
-  margin-top: 4px;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
-/* letras deader */
-.hero-banner-container h1 {
-  color: white;
-  font-size: 7em;
-  text-align: start;
-  text-transform: uppercase;
+.hero-banner-container button:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(1.05);
 }
+
+/* Título SUPER-COLLAR */
+.hero-banner-container h3 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 10px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Título deader */
+.hero-banner-container h1 {
+  font-size: 7rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-align: center;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .hero-banner-container {
+    padding: 60px 15px;
+    min-height: 400px;
+  }
+
+  .hero-banner-container h3 {
+    font-size: 3rem;
+  }
+
+  .hero-banner-container h1 {
+    font-size: 5rem;
+  }
+
+  .hero-banner-container button {
+    padding: 10px 16px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-banner-container {
+    padding: 40px 10px;
+    min-height: 350px;
+  }
+
+  .hero-banner-container h3 {
+    font-size: 2.5rem;
+  }
+
+  .hero-banner-container h1 {
+    font-size: 4rem;
+  }
+
+  .hero-banner-container button {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+}
+
 .hero-banner-image {
   position: absolute;
  margin-top: 10%;
