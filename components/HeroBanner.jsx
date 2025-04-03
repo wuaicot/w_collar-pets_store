@@ -19,7 +19,7 @@ const HeroBanner = ({ heroBanner }) => {
         </h1>
         
         <div className="max-w-2xl mx-auto animate-fade-in-up">
-          <p className="text-lg text-yellow-300 italic font-medium">
+          <p className="text-lg italic font-medium ">
             {heroBanner.desc}
           </p>
         </div>
