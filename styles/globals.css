@@ -1,3 +1,4 @@
+ /* styles/globals.css */
 html,
 body,
 * {
@@ -20,10 +21,14 @@ a {
   text-decoration: none;
 }
 
+/* Main container actualizado: degradado dinámico y bordes redondeados */
 .main-container {
   max-width: 1400px;
   margin: auto;
   width: 100%;
+  background: linear-gradient(135deg, #fcfc00, #ff5733);
+  border-radius: 16px;
+  padding: 20px;
 }
 .layout {
   padding: 10px;
@@ -34,6 +39,11 @@ a {
   justify-content: space-between;
   margin: 6px 18px;
   position: relative;
+  transition: background-color 0.5s ease;
+}
+/* cambia el fondo del navbar al hacer scroll */
+.navbar-container.scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .marquee-text {
   font-size: 29px;
@@ -100,7 +110,7 @@ span.text-red {
 color:white}
 
 .sub_hero{
- background-color: #fcfc00;
+ 
  border-radius:0 0 16%  16% ;
  color: #000;
  
@@ -109,12 +119,12 @@ color:white}
 
 .products-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap:wrap;
   justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
-  width: 100%;
-  
+  gap:32px;
+  margin-top: 32px;
+  width: 100%; 
+   
 }
 
 .product-card {
@@ -122,6 +132,7 @@ color:white}
   transform: scale(1, 1);
   transition: transform 0.5s ease;
   color: #324d67;
+  
 }
 .product-card:hover {
   transform: scale(1.1, 1.1);
@@ -134,12 +145,12 @@ color:white}
 }
 
 .product-name {
-  font-weight: 500;
+  font-weight: 500; 
 }
 .product-price {
   font-weight: 800;
   margin-top: 6px;
-  color: black;
+  color: black;  
 }
 /*  */
 .hero-banner-container {
@@ -431,6 +442,18 @@ color:white}
 .btn:hover {
   transform: scale(1.1, 1.1);
 }
+.btn:hover,
+.buttons .add-to-cart:hover,
+.buttons .buy-now:hover {
+  transform: scale(1.05);
+  background-color: #e63946;
+}
+/* Otras mejoras: botones con microinteracciones */
+.btn,
+.buttons .add-to-cart,
+.buttons .buy-now {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
 .product-detail-container {
   display: flex;
   gap: 40px;
@@ -568,7 +591,7 @@ color:white}
   text-align: center;
   margin: 50px;
   color: #324d67;
-
+  
   font-size: 28px;
 }
 .maylike-products-container {
@@ -576,6 +599,7 @@ color:white}
   justify-content: center;
   gap: 15px;
   margin-top: 20px;
+  
 }
 .max-qty {
   font-weight: 500;
@@ -805,3 +829,21 @@ color:white}
   }
 }
 
+/* Animación de entrada para el contenedor de productos */
+.fade-in {
+  animation: fadeIn 1.2s ease-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Producto: efecto hover con sombra y ligera rotación */
+.product-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
