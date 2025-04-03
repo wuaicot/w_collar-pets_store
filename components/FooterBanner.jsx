@@ -26,11 +26,11 @@ const FooterBanner = ({ footerBanner }) => {
           <h3>{largeText2}</h3>
           <p>{saleTime}</p>
         </div>
-        <div className="right">
+        {/* <div className="right">
           <p>{smallText}</p>
           <h3>{midText}</h3>
           <p>{desc}</p>
-        </div>
+        </div> */}
 
         {/* {image && <img src={urlFor(image)} className="footer-banner-image" />}  */}
       </div>
