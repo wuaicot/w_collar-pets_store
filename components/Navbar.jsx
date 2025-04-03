@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div className="navbar-container">
       <p className="logo ">
-        <Link className="font-bold"  href="https://mascota-perdida-app-qkxp.vercel.app/ " >WUAICOT-STORE
+        <Link className="font-bold"  href="https://mascota-perdida-app-qkxp.vercel.app/ " >Ir a la app Super-Collar
         </Link>
 
       </p> 

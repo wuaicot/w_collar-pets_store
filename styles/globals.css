@@ -82,8 +82,10 @@ span.text-red {
   margin-left: 6px;
 }
 .logo {
-  color: gray;
+  color: rgb(92, 101, 163);
   font-size: 18px;
+  animation-fill-mode: both
+  ;
 }
 .cart-icon {
   font-size: 25px;
@@ -160,7 +162,7 @@ color:white}
   align-items: center; /* Centra horizontalmente */
   text-align: center; /* Asegura que el texto esté alineado */
   padding: 80px 20px;
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(3, 198, 252);
   border-radius: 16% 16% 0 0px;
   position: relative;
   min-height: 500px;
